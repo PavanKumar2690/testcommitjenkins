@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: self-runner-node
+    runs-on: self-hosted
     steps:
       - name: "Trigger jenkins job"
         uses: 'Others/Pipeline-example@main' 
