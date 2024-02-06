@@ -1,1 +1,14 @@
-
+name: test
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build:
+    name: Build
+    runs-on: self-runner-node
+    steps:
+      - name: "Trigger jenkins job"
+        with:
+          jenkins-url: 'http://localhost:8080/'
+          job-name: 'Pipeline-example'
